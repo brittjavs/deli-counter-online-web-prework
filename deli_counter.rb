@@ -13,9 +13,15 @@ end
  end
  end
  
-def take_a_number(katz_deli, customer)
-  katz_deli << customer
-  puts "Welcome, #{customer}. You are number #{katz_deli.length} in line."
+# def take_a_number(katz_deli, customer)
+#   katz_deli << customer
+#   puts "Welcome, #{customer}. You are number #{katz_deli.length} in line."
+# end
+
+def take_a_number(katz_deli, number)
+  katz_deli << number
+  puts "Welcome, you are ticket number #{number}."
+  number += 1
 end
 
 def now_serving(katz_deli)
@@ -27,4 +33,4 @@ def now_serving(katz_deli)
 end
  end
 
-
+take_a_number(katz_deli, 1)
